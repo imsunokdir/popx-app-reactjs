@@ -27,7 +27,7 @@ Designed in Adobe XD. The app is fully responsive:
 ### Installation
 ```bash
 git clone https://github.com/yourusername/popx-app-assignment.git
-cd popx-app-assignment
+cd popx-app-reactjs
 npm install
 ```
 
