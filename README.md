@@ -1,16 +1,64 @@
-# React + Vite
+# PopX App — React + Tailwind CSS Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multi-screen mobile-first web app built with React and Tailwind CSS, based on a provided Adobe XD design.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+[popx-app-assignment.vercel.app](https://popx-app-reactjs.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📱 Screens
+- **Welcome** — Landing screen with navigation to Login or Register
+- **Login** — Email & password validation, button enables only when form is valid
+- **Register** — Full registration form with required field indicators
+- **Account Settings** — Profile view with avatar and user details
 
-## React Compiler
+## 🛠 Tech Stack
+- **React** — UI library
+- **Tailwind CSS v4** — Styling
+- **React Router DOM** — Client-side routing
+- **Vite** — Build tool
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📐 Design
+Designed in Adobe XD. The app is fully responsive:
+- On **mobile screens** → full screen layout like a native app
+- On **desktop screens** → centered mobile mockup with shadow
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+```bash
+git clone https://github.com/yourusername/popx-app-assignment.git
+cd popx-app-reactjs
+npm install
+```
+
+### Run locally
+```bash
+npm run dev
+```
+
+### Build for production
+```bash
+npm run build
+```
+
+## 📁 Project Structure
+```
+src/
+├── components/
+│   └── MobileLayout.jsx      # Mobile frame wrapper
+├── pages/
+│   ├── PopXWelcome.jsx        # Welcome screen
+│   ├── Login.jsx              # Login screen
+│   ├── Register.jsx           # Register screen
+│   └── AccountSettings.jsx    # Account settings screen
+├── App.jsx                    # Routes
+├── main.jsx                   # Entry point
+└── index.css                  # Global styles & CSS variables
+```
+
+## 🔄 App Flow
+```
+Welcome
+  ├── Create Account → Register → Login → Account Settings
+  └── Already Registered? Login → Login → Account Settings
+```
