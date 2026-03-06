@@ -3,7 +3,7 @@
 A multi-screen mobile-first web app built with React and Tailwind CSS, based on a provided Adobe XD design.
 
 ## 🔗 Live Demo
-[popx-app-assignment.vercel.app](https://popx-app-assignment.vercel.app)
+[popx-app-assignment.vercel.app](https://popx-app-reactjs.vercel.app/)
 
 ## 📱 Screens
 - **Welcome** — Landing screen with navigation to Login or Register
