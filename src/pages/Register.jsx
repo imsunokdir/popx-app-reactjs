@@ -139,7 +139,7 @@ export default function Register() {
 
       {/* Create Account Button */}
       <button
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/login")}
         className="w-full py-4 rounded-lg text-white font-semibold text-base transition-opacity hover:opacity-90 mb-2"
         style={{ backgroundColor: "var(--color-primary)" }}
       >
