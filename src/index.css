@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #6c3ef4;
+    --color-primary-light: #c9b8fa;
+    --color-primary-dark: #4b2bc4;
+    --color-bg: #f3f4f6;
+    --color-surface: #fafafa;
+    --color-text-main: #111827;
+    --color-text-muted: #6b7280;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* On mobile: full screen, no frame effect */
+  .mobile-frame {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  /* On desktop: show as centered mobile mockup */
+  @media (min-width: 600px) {
+    .mobile-frame {
+      max-width: 390px;
+      height: 95vh;
+      max-height: 844px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
